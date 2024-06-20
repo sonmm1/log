@@ -1,0 +1,118 @@
+1382:C 19 Jun 2024 09:47:06.536 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+1382:C 19 Jun 2024 09:47:06.536 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1383:C 19 Jun 2024 09:47:06.544 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1383:C 19 Jun 2024 09:47:06.544 * Redis version=7.2.4, bits=64, commit=00000000, modified=0, pid=1383, just started
+1383:C 19 Jun 2024 09:47:06.544 * Configuration loaded
+1383:M 19 Jun 2024 09:47:06.545 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+1383:M 19 Jun 2024 09:47:06.545 * monotonic clock: POSIX clock_gettime
+1383:M 19 Jun 2024 09:47:06.546 * Running mode=cluster, port=6388.
+1383:M 19 Jun 2024 09:47:06.546 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1383:M 19 Jun 2024 09:47:06.546 * No cluster configuration found, I'm a02633593849b93c0bbf30270c469189c19e7994
+1383:M 19 Jun 2024 09:47:06.546 * Server initialized
+1383:M 19 Jun 2024 09:47:06.547 * Creating AOF base file appendonly6388.aof.1.base.rdb on server start
+1383:M 19 Jun 2024 09:47:06.547 * Creating AOF incr file appendonly6388.aof.1.incr.aof on server start
+1383:M 19 Jun 2024 09:47:06.547 * Ready to accept connections tcp
+1383:M 19 Jun 2024 09:53:25.350 # Missing implement of connection type tls
+1383:M 19 Jun 2024 09:53:25.520 * IP address for this node updated to 127.0.0.1
+1383:S 19 Jun 2024 09:53:26.355 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1383:S 19 Jun 2024 09:53:26.355 * Connecting to MASTER 127.0.0.1:6387
+1383:S 19 Jun 2024 09:53:26.356 * MASTER <-> REPLICA sync started
+1383:S 19 Jun 2024 09:53:26.356 * Cluster state changed: ok
+1383:S 19 Jun 2024 09:53:26.357 * Non blocking connect for SYNC fired the event.
+1383:S 19 Jun 2024 09:53:26.359 * Master replied to PING, replication can continue...
+1383:S 19 Jun 2024 09:53:26.359 * Trying a partial resynchronization (request a065acb90455f73e0e5f55442b1dde74cbe005c6:1).
+1383:S 19 Jun 2024 09:53:31.555 * Full resync from master: 78020cfac4b82c96517933dafdfb20632db60c99:1
+1383:S 19 Jun 2024 09:53:31.624 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1383:S 19 Jun 2024 09:53:31.625 * Discarding previously cached master state.
+1383:S 19 Jun 2024 09:53:31.625 * MASTER <-> REPLICA sync: Flushing old data
+1383:S 19 Jun 2024 09:53:31.625 * MASTER <-> REPLICA sync: Loading DB in memory
+1383:S 19 Jun 2024 09:53:31.625 * Loading RDB produced by version 7.2.4
+1383:S 19 Jun 2024 09:53:31.625 * RDB age 0 seconds
+1383:S 19 Jun 2024 09:53:31.625 * RDB memory usage when created 1.81 Mb
+1383:S 19 Jun 2024 09:53:31.625 * Done loading RDB, keys loaded: 0, keys expired: 0.
+1383:S 19 Jun 2024 09:53:31.625 * MASTER <-> REPLICA sync: Finished with success
+1383:S 19 Jun 2024 09:53:31.625 * Creating AOF incr file temp-appendonly6388.aof.incr on background rewrite
+1383:S 19 Jun 2024 09:53:31.626 * Background append only file rewriting started by pid 1401
+1401:C 19 Jun 2024 09:53:31.627 * Successfully created the temporary AOF base file temp-rewriteaof-bg-1401.aof
+1401:C 19 Jun 2024 09:53:31.627 * Fork CoW for AOF rewrite: current 6 MB, peak 6 MB, average 6 MB
+1383:S 19 Jun 2024 09:53:31.721 * Background AOF rewrite terminated with success
+1383:S 19 Jun 2024 09:53:31.721 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-1401.aof into appendonly6388.aof.2.base.rdb
+1383:S 19 Jun 2024 09:53:31.721 * Successfully renamed the temporary AOF incr file temp-appendonly6388.aof.incr into appendonly6388.aof.2.incr.aof
+1383:S 19 Jun 2024 09:53:31.722 * Removing the history file appendonly6388.aof.1.incr.aof in the background
+1383:S 19 Jun 2024 09:53:31.722 * Removing the history file appendonly6388.aof.1.base.rdb in the background
+1383:S 19 Jun 2024 09:53:31.723 * Background AOF rewrite finished successfully
+1336:C 19 Jun 2024 21:57:25.950 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+1336:C 19 Jun 2024 21:57:25.950 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1337:C 19 Jun 2024 21:57:25.958 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1337:C 19 Jun 2024 21:57:25.958 * Redis version=7.2.4, bits=64, commit=00000000, modified=0, pid=1337, just started
+1337:C 19 Jun 2024 21:57:25.958 * Configuration loaded
+1337:M 19 Jun 2024 21:57:25.959 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+1337:M 19 Jun 2024 21:57:25.959 * monotonic clock: POSIX clock_gettime
+1337:M 19 Jun 2024 21:57:25.960 * Running mode=cluster, port=6388.
+1337:M 19 Jun 2024 21:57:25.960 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1337:M 19 Jun 2024 21:57:25.961 * Node configuration loaded, I'm a02633593849b93c0bbf30270c469189c19e7994
+1337:M 19 Jun 2024 21:57:25.962 * Server initialized
+1337:M 19 Jun 2024 21:57:25.962 * Reading RDB base file on AOF loading...
+1337:M 19 Jun 2024 21:57:25.962 * Loading RDB produced by version 7.2.4
+1337:M 19 Jun 2024 21:57:25.962 * RDB age 43434 seconds
+1337:M 19 Jun 2024 21:57:25.962 * RDB memory usage when created 1.70 Mb
+1337:M 19 Jun 2024 21:57:25.963 * RDB is base AOF
+1337:M 19 Jun 2024 21:57:25.963 * Done loading RDB, keys loaded: 0, keys expired: 0.
+1337:M 19 Jun 2024 21:57:25.963 * DB loaded from base file appendonly6388.aof.2.base.rdb: 0.001 seconds
+1337:M 19 Jun 2024 21:57:25.963 * DB loaded from append only file: 0.001 seconds
+1337:M 19 Jun 2024 21:57:25.963 * Opening AOF incr file appendonly6388.aof.2.incr.aof on server start
+1337:M 19 Jun 2024 21:57:25.963 * Ready to accept connections tcp
+1337:S 19 Jun 2024 21:57:25.963 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1337:S 19 Jun 2024 21:57:25.963 * Connecting to MASTER 127.0.0.1:6387
+1337:S 19 Jun 2024 21:57:25.963 * MASTER <-> REPLICA sync started
+1337:S 19 Jun 2024 21:57:25.963 * Cluster state changed: ok
+1337:S 19 Jun 2024 21:57:25.964 * Non blocking connect for SYNC fired the event.
+1337:S 19 Jun 2024 21:57:25.966 * Master replied to PING, replication can continue...
+1337:S 19 Jun 2024 21:57:25.967 * Trying a partial resynchronization (request 1841a2da6ddd5d5199a413998267cf201dc06a1d:1).
+1337:S 19 Jun 2024 21:57:30.208 * Full resync from master: 307dc409010ae7795165e07eee1e5af5e0b3d532:0
+1337:S 19 Jun 2024 21:57:30.209 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1337:S 19 Jun 2024 21:57:30.209 * Discarding previously cached master state.
+1337:S 19 Jun 2024 21:57:30.210 * MASTER <-> REPLICA sync: Flushing old data
+1337:S 19 Jun 2024 21:57:30.210 * MASTER <-> REPLICA sync: Loading DB in memory
+1337:S 19 Jun 2024 21:57:30.210 * Loading RDB produced by version 7.2.4
+1337:S 19 Jun 2024 21:57:30.210 * RDB age 0 seconds
+1337:S 19 Jun 2024 21:57:30.210 * RDB memory usage when created 1.62 Mb
+1337:S 19 Jun 2024 21:57:30.210 * Done loading RDB, keys loaded: 0, keys expired: 0.
+1337:S 19 Jun 2024 21:57:30.210 * MASTER <-> REPLICA sync: Finished with success
+1337:S 19 Jun 2024 21:57:30.210 * Creating AOF incr file temp-appendonly6388.aof.incr on background rewrite
+1337:S 19 Jun 2024 21:57:30.211 * Background append only file rewriting started by pid 1345
+1345:C 19 Jun 2024 21:57:30.212 * Successfully created the temporary AOF base file temp-rewriteaof-bg-1345.aof
+1345:C 19 Jun 2024 21:57:30.212 * Fork CoW for AOF rewrite: current 4 MB, peak 4 MB, average 4 MB
+1337:S 19 Jun 2024 21:57:30.290 * Background AOF rewrite terminated with success
+1337:S 19 Jun 2024 21:57:30.290 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-1345.aof into appendonly6388.aof.3.base.rdb
+1337:S 19 Jun 2024 21:57:30.290 * Successfully renamed the temporary AOF incr file temp-appendonly6388.aof.incr into appendonly6388.aof.3.incr.aof
+1337:S 19 Jun 2024 21:57:30.291 * Removing the history file appendonly6388.aof.2.incr.aof in the background
+1337:S 19 Jun 2024 21:57:30.291 * Removing the history file appendonly6388.aof.2.base.rdb in the background
+1337:S 19 Jun 2024 21:57:30.291 * Background AOF rewrite finished successfully
+1337:S 19 Jun 2024 21:57:33.551 # Missing implement of connection type tls
+1337:M 19 Jun 2024 21:59:25.122 * Connection with master lost.
+1337:M 19 Jun 2024 21:59:25.122 * Caching the disconnected master state.
+1337:M 19 Jun 2024 21:59:25.122 * Discarding previously cached master state.
+1337:M 19 Jun 2024 21:59:25.122 * Setting secondary replication ID to 307dc409010ae7795165e07eee1e5af5e0b3d532, valid up to offset: 169. New replication ID is 33ebec9797d6d893b93a57d52eadddb7d846a18d
+1337:M 19 Jun 2024 21:59:25.122 # Cluster state changed: fail
+1288:C 19 Jun 2024 23:16:38.049 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+1288:C 19 Jun 2024 23:16:38.050 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1289:C 19 Jun 2024 23:16:38.059 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1289:C 19 Jun 2024 23:16:38.059 * Redis version=7.2.4, bits=64, commit=00000000, modified=0, pid=1289, just started
+1289:C 19 Jun 2024 23:16:38.059 * Configuration loaded
+1289:M 19 Jun 2024 23:16:38.059 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+1289:M 19 Jun 2024 23:16:38.059 * monotonic clock: POSIX clock_gettime
+1289:M 19 Jun 2024 23:16:38.060 * Running mode=cluster, port=6388.
+1289:M 19 Jun 2024 23:16:38.060 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1289:M 19 Jun 2024 23:16:38.116 * Node configuration loaded, I'm a02633593849b93c0bbf30270c469189c19e7994
+1289:M 19 Jun 2024 23:16:38.117 * Server initialized
+1289:M 19 Jun 2024 23:16:38.123 * Reading RDB base file on AOF loading...
+1289:M 19 Jun 2024 23:16:38.123 * Loading RDB produced by version 7.2.4
+1289:M 19 Jun 2024 23:16:38.123 * RDB age 4748 seconds
+1289:M 19 Jun 2024 23:16:38.123 * RDB memory usage when created 1.56 Mb
+1289:M 19 Jun 2024 23:16:38.123 * RDB is base AOF
+1289:M 19 Jun 2024 23:16:38.123 * Done loading RDB, keys loaded: 0, keys expired: 0.
+1289:M 19 Jun 2024 23:16:38.123 * DB loaded from base file appendonly6388.aof.3.base.rdb: 0.005 seconds
+1289:M 19 Jun 2024 23:16:38.123 * DB loaded from append only file: 0.006 seconds
+1289:M 19 Jun 2024 23:16:38.123 * Opening AOF incr file appendonly6388.aof.3.incr.aof on server start
+1289:M 19 Jun 2024 23:16:38.123 * Ready to accept connections tcp
